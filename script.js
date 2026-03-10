@@ -14,7 +14,7 @@ function extractFruit(event) {
 
 async function fetchFruit(fruit){
     try {
-    const resp = await fetch(`https://fruit-api-5v0j.onrender.com/fruits/${fruit}`)
+    const resp = await fetch(`https://fruit-app-backend-project-day2.onrender.com/fruits${fruit}`)
     if(resp.ok){
         const data = await resp.json();
         addFruit(data);
