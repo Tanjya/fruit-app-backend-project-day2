@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const fruits = require("./routes/fruits")
+const cors = require('cors')
 
 // app.get('/', (req, res) => {
 //    res.send('Hello Fruity!');
