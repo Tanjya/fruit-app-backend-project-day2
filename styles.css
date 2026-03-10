@@ -1,0 +1,97 @@
+
+body {
+  background-color: #dfdfdf;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* ── Sections ── */
+#inputSection {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+#fruitSection,
+#nutritionSection {
+  background: #fff;
+  border: 1px solid #e8ddd0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ── Forms ── */
+form {
+  background: #fff;
+  border: 1px solid #e8ddd0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-width: 220px;
+  flex: 1;
+}
+
+label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+  margin-bottom: -0.25rem;
+}
+
+input{
+  border: 2px solid #ddd;
+  border-radius: 7px;
+  padding: 0.55rem 0.8rem;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+
+button{
+  margin-top: 0.25rem;
+  padding: 0.6rem 1.2rem;
+  background: #84c8da;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+button:hover {
+  background: #6598a7;
+}
+
+button[type="submit"]:active {
+  transform: scale(0.97);
+}
+
+/* ── Fruit list ── */
+#fruitSection ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#fruitSection ul li {
+  border: 1px solid #84c8da;
+  border-radius: 20px;
+  padding: 0.3rem 0.9rem;
+  font-size: 24px;
+
+}
+
+/* ── Nutrition ── */
+#nutritionSection p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
